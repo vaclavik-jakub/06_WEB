@@ -1,0 +1,16 @@
+problém "wwwroot" -> mohu naèíst nìco, co mi nepatøí 
+
+soubory jsou nìkde - kód: Autorizace
+endpoint -> najdeme soubor, naèteme ho byte po byte, "file-stream", hlavièka protokolu => výstup. Návrat jako web. stránky 
+
+kolize -> stejnì pojmenované soubory. Ve složce pojmeované pomocí GUID 
+
+form method="post" -> urèuje co bude dìlat, povoluje, že to mùže poslat, action="" -> endpoint
+
+encrypt="multipart/form-data" -> povoluje poslat více dat
+
+DataModel - databáze
+
+InputModel - data od uživatele (form)
+
+ViewModel - to je web (to co vidíme, posíláme)
