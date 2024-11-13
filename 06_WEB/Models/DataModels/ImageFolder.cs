@@ -1,10 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using _06_WEB.Models.DataModels;
 
-
 namespace _06_WEB.Models.DataModels
 {
-    public class DataForm
+    public class ImageFolder
     {
         public Guid Id { get; set; } // Primární klíč
         public string FileName { get; set; } // Název souboru

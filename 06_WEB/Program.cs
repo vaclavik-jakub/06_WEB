@@ -10,11 +10,12 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+builder.Services.AddCors(options => 
+    { 
+        options.AddDefaultPolicy(builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().WithExposedHeaders("Location", "Upload-Offset", "Upload-Length", "Tus-Resumable")); 
+    }); 
+        if (app.Environment.IsDevelopment()) 
+{ app.UseSwagger(); app.UseSwaggerUI(); app.UseCors(); }
 
 app.UseHttpsRedirection();
 
